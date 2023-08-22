@@ -1,0 +1,33 @@
+<ion-content [fullscreen]="true">
+  <div class="ion-padding div-form-card">
+      <div style="margin-left: auto; margin-right: auto; width: 40%;">
+          <img src="../../assets/SUMMA-SERV-CORP-INTEGRALES-fotor-20230821155132.png">
+      </div>
+      <br>
+      <h4 id="text">INICIAR SESION</h4>
+      <br>
+      <div>
+          <ion-card class="card-form">
+              <ion-card-content>
+                  <form [formGroup]="formUser" id="form">
+                      <!-- <app-input-form type="email" placeholder="Email" formControlName="correo" name="correo"></app-input-form> -->
+                      <ion-item lines="none" class="ion-margin-bottom">
+
+                          <ion-input  formControlName="correo" name="correo" type="email" placeholder="Correo" ></ion-input>
+                      </ion-item>
+                      <ion-item lines="none" class="ion-margin-bottom">
+
+                          <ion-input  formControlName="password" name="password" type="password" placeholder="Contraseña" ></ion-input>
+                      </ion-item>
+                      <!-- <app-input-form type="password" placeholder="Contraseña" formControlName="password" name="password"></app-input-form> -->
+                      <ion-button style="--background:#63806E;" expand="block" shape="round" (click)="login()" >LOGIN</ion-button>
+                  </form>
+                  <!-- <div style="width: 70%; margin-left: auto; margin-right: auto; padding-top: 10px;">
+                      <h5 style="text-align: center; font-weight: bold; ">No tienes cuenta ? <span style="color: #F25E24;" (click)="register()">Registrate</span></h5>
+                  </div> -->
+              </ion-card-content>
+          </ion-card>
+      </div>
+  </div>
+
+</ion-content>

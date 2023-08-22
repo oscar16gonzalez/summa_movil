@@ -1,0 +1,7 @@
+{
+  "name": "summa_movil",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}

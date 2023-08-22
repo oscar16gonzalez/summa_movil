@@ -1,0 +1,68 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-button (click)="back()">
+        <ion-icon name="arrow-back"  style="zoom: 1.5;"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div>
+    <br>
+    <br>
+    <form [formGroup]="formCreateRutas">
+      <ion-card>
+        <ion-card-header>
+          <ion-card-title>REGISTRAR RUTA</ion-card-title>
+        </ion-card-header>
+      
+        <ion-card-content>
+          <div class="ion-padding" slot="content">
+            <ion-item>
+                <ion-label position="floating">Ingrese fecha</ion-label>
+                <ion-input formControlName="fecha" type="text" ></ion-input>
+            </ion-item>
+          </div>
+
+          <div class="ion-padding" slot="content">
+            <ion-item>
+                <ion-label position="floating">Ingrese Tipo vehiculo</ion-label>
+                <ion-input  formControlName="tipo_vehiculo" type="text" ></ion-input>
+            </ion-item>
+          </div>
+          <div class="ion-padding" slot="content">
+            <ion-item>
+                <ion-label position="floating">Ingrese Hora de salida</ion-label>
+                <ion-input  formControlName="hora_salida" type="text" ></ion-input>
+            </ion-item>
+          </div>
+          <div class="ion-padding" slot="content">
+            <ion-item>
+                <ion-label position="floating"> Ingrese Cupos disponibles</ion-label>
+                <ion-input  formControlName="cupos_disponibles" type="text" ></ion-input>
+            </ion-item>
+          </div>
+          <div class="ion-padding" slot="content">
+            <ion-item>
+                <ion-label position="floating">Ingrese Origen</ion-label>
+                <ion-input  formControlName="origen" type="text" ></ion-input>
+            </ion-item>
+          </div>
+          <div class="ion-padding" slot="content">
+            <ion-item>
+                <ion-label position="floating">Ingrese Destino</ion-label>
+                <ion-input  formControlName="destino" type="text" ></ion-input>
+            </ion-item>
+          </div>
+          <br>
+          <ion-button style="--background:#63806E;" expand="block" shape="round" (click)="createRutas() ">REGISTRO</ion-button>
+        </ion-card-content>
+      </ion-card>
+      
+    </form>
+  </div>
+
+
+</ion-content>
